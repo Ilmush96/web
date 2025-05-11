@@ -8,7 +8,7 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('https://example.com/desktop-image.jpg') no-repeat center center fixed;
+      background: url('https://i.postimg.cc/2SrFjWv8/Bax.png') no-repeat center center fixed;
       background-size: cover;
       color: white;
     }
@@ -73,7 +73,6 @@
       border-radius: 10px;
       background-color: transparent;
       object-fit: contain;
-      max-width: 1000px;
     }
 
     .hidden {
@@ -124,7 +123,7 @@
 
     @media (max-width: 768px) {
       body {
-        background: url('https://example.com/mobile-image.jpg') no-repeat center center fixed;
+        background: url('https://i.postimg.cc/5NpY9JyC/Ba.png') no-repeat center center fixed;
         background-size: cover;
       }
 
@@ -142,6 +141,9 @@
         width: 100%;
         height: auto;
         max-width: 1000px;
+        transform: scale(2.4);
+        transform-origin: top;
+        pointer-events: auto;
       }
     }
   </style>
@@ -178,7 +180,7 @@
   <div id="about" class="container hidden">
     <img src="https://i.postimg.cc/fyzHXZN9/Ilmush-LOGO-Full-black.png" alt="Brand Logo" class="logo">
     <div class="about-text">
-      Founded in 2024, ILMUSH Embroidery is a creative embroidery brand specializing in sports logo patches and customized photo frame embroideries. With a passion for precision and detail, we bring designs to life through high-quality stitching and innovative craftsmanship. 
+      Founded in 2024, ILMUSH Embroidery is a creative embroidery brand specializing in sports logo patches and customized photo frame embroideries. With a passion for precision and detail, we bring designs to life through high-quality stitching and innovative craftsmanship.
       <br><br>
       At ILMUSH, we started our journey with a focus on sports logo patches, aiming to provide fans, athletes, and collectors with vibrant, durable, and authentically embroidered designs. Over time, we expanded our offerings to include custom photo frame embroideries, allowing our customers to turn cherished memories into timeless embroidered art.
       <br><br>
