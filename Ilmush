@@ -8,7 +8,7 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('https://i.postimg.cc/2SrFjWv8/Bax.png') no-repeat center center fixed;
+      background: url('https://example.com/desktop-image.jpg') no-repeat center center fixed;
       background-size: cover;
       color: white;
     }
@@ -124,7 +124,7 @@
 
     @media (max-width: 768px) {
       body {
-        background: url('https://i.postimg.cc/5NpY9JyC/Ba.png') no-repeat center center fixed;
+        background: url('https://example.com/mobile-image.jpg') no-repeat center center fixed;
         background-size: cover;
       }
 
@@ -135,9 +135,7 @@
       }
 
       .tile {
-        padding: 2rem;
-        transform: scale(2.5);
-        transform-origin: center;
+        padding: 1.5rem;
       }
 
       .tile img {
@@ -162,7 +160,6 @@
 
   <div id="home" class="container">
     <div class="gallery">
-      <!-- Image tiles -->
       <div class="tile"><a href="https://www.amazon.in/dp/B0DNSFPMMC" target="_blank"><img src="https://i.postimg.cc/VvRwF7MS/Deadpool-1.png" alt="Image 1"></a></div>
       <div class="tile"><a href="https://www.amazon.in/dp/B0DNQ6328C" target="_blank"><img src="https://i.postimg.cc/C1pVpysB/CR7.png" alt="Image 2"></a></div>
       <div class="tile"><a href="https://www.amazon.in/dp/B0DP6MJS1H" target="_blank"><img src="https://i.postimg.cc/KcNhwHkj/Kohli-1a.png" alt="Image 3"></a></div>
