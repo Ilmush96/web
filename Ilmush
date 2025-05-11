@@ -124,12 +124,12 @@
     @media (max-width: 768px) {
       .gallery {
         grid-template-columns: repeat(2, 1fr);
-        gap: 0.5rem;
-        padding: 1rem;
+        gap: 0.4rem;
+        padding: 0.5rem;
       }
 
       .tile {
-        padding: 0.3rem;
+        padding: 0.2rem;
       }
 
       .tile img {
@@ -154,7 +154,6 @@
 
   <div id="home" class="container">
     <div class="gallery">
-      <!-- Gallery images -->
       <div class="tile"><a href="https://www.amazon.in/dp/B0DNSFPMMC" target="_blank"><img src="https://i.postimg.cc/VvRwF7MS/Deadpool-1.png" alt="Image 1"></a></div>
       <div class="tile"><a href="https://www.amazon.in/dp/B0DNQ6328C" target="_blank"><img src="https://i.postimg.cc/C1pVpysB/CR7.png" alt="Image 2"></a></div>
       <div class="tile"><a href="https://www.amazon.in/dp/B0DP6MJS1H" target="_blank"><img src="https://i.postimg.cc/KcNhwHkj/Kohli-1a.png" alt="Image 3"></a></div>
