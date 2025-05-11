@@ -8,8 +8,10 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('https://i.postimg.cc/5NpY9JyC/Ba.png') no-repeat center center fixed;
+      background: url('https://i.postimg.cc/5NpY9JyC/Ba.png') no-repeat center center fixed; /* Desktop background image */
       background-size: cover;
+      background-attachment: fixed;
+      background-position: center center;
       color: white;
     }
 
@@ -121,12 +123,15 @@
       border-radius: 10px;
     }
 
-    .about-text p {
-      margin-bottom: 1rem;
-      line-height: 1.6;
-    }
-
+    /* For mobile devices */
     @media (max-width: 768px) {
+      body {
+        background: url('https://i.postimg.cc/5NpY9JyC/Ba.png') no-repeat center center fixed; /* Mobile background image */
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+      }
+
       .gallery {
         grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
         gap: 1.5rem;
@@ -140,8 +145,7 @@
       .tile img {
         width: 100%;
         height: auto;
-        max-width: 1000px;  /* Set max-width to 1000px */
-        transform: scale(2.5); /* Scale images */
+        max-width: 1200px; /* Increased image size to 3x */
       }
     }
   </style>
@@ -160,7 +164,7 @@
 
   <div id="home" class="container">
     <div class="gallery">
-      <!-- Image tiles -->
+      <!-- Repeat your image tiles here -->
       <div class="tile"><a href="https://www.amazon.in/dp/B0DNSFPMMC" target="_blank"><img src="https://i.postimg.cc/VvRwF7MS/Deadpool-1.png" alt="Image 1"></a></div>
       <div class="tile"><a href="https://www.amazon.in/dp/B0DNQ6328C" target="_blank"><img src="https://i.postimg.cc/C1pVpysB/CR7.png" alt="Image 2"></a></div>
       <div class="tile"><a href="https://www.amazon.in/dp/B0DP6MJS1H" target="_blank"><img src="https://i.postimg.cc/KcNhwHkj/Kohli-1a.png" alt="Image 3"></a></div>
@@ -179,11 +183,11 @@
   <div id="about" class="container hidden">
     <img src="https://i.postimg.cc/fyzHXZN9/Ilmush-LOGO-Full-black.png" alt="Brand Logo" class="logo">
     <div class="about-text">
-      <p><strong>Founded in 2024, ILMUSH Embroidery</strong> is a creative embroidery brand specializing in sports logo patches and customized photo frame embroideries. With a passion for precision and detail, we bring designs to life through high-quality stitching and innovative craftsmanship.</p>
-
-      <p>At ILMUSH, we started our journey with a focus on sports logo patches, aiming to provide fans, athletes, and collectors with vibrant, durable, and authentically embroidered designs. Over time, we expanded our offerings to include custom photo frame embroideries, allowing our customers to turn cherished memories into timeless embroidered art.</p>
-
-      <p>Whether it's a team emblem or a personalized photo, every piece at ILMUSH is made with care, creativity, and a commitment to excellence. We take pride in turning ideas into embroidered expressions that last a lifetime.</p>
+      Founded in 2024, ILMUSH Embroidery is a creative embroidery brand specializing in sports logo patches and customized photo frame embroideries. With a passion for precision and detail, we bring designs to life through high-quality stitching and innovative craftsmanship.
+      <br><br>
+      At ILMUSH, we started our journey with a focus on sports logo patches, aiming to provide fans, athletes, and collectors with vibrant, durable, and authentically embroidered designs. Over time, we expanded our offerings to include custom photo frame embroideries, allowing our customers to turn cherished memories into timeless embroidered art.
+      <br><br>
+      Whether it's a team emblem or a personalized photo, every piece at ILMUSH is made with care, creativity, and a commitment to excellence. We take pride in turning ideas into embroidered expressions that last a lifetime.
     </div>
   </div>
 
@@ -214,16 +218,8 @@
     }
 
     function handleSubmit(event) {
-      const phone = document.getElementById('phoneNumber').value.trim();
-      if (phone) {
-        setTimeout(() => {
-          window.open("https://bit.ly/Whatsapp_96", "_blank");
-        }, 100);
-        return true;
-      } else {
-        alert("Please enter a valid phone number.");
-        return false;
-      }
+      event.preventDefault();
+      alert('Thank you for contacting us!');
     }
   </script>
 </body>
