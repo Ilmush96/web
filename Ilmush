@@ -121,6 +121,7 @@
       border-radius: 10px;
     }
 
+    /* Mobile Specific Styles */
     @media (max-width: 768px) {
       .gallery {
         grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
@@ -135,8 +136,9 @@
       .tile img {
         width: 100%;            /* Make the image take full width */
         height: auto;           /* Maintain aspect ratio */
-        max-width: 3000px;      /* Limit the image width to 3000px */
+        max-width: none;        /* Remove max-width constraint */
         object-fit: contain;    /* Ensure the image does not get distorted */
+        transform: scale(3);    /* Increase the size 3 times */
       }
     }
   </style>
