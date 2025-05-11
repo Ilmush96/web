@@ -8,7 +8,7 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('https://example.com/desktop-image.jpg') no-repeat center center fixed;
+      background: url('https://i.postimg.cc/2SrFjWv8/Bax.png') no-repeat center center fixed;
       background-size: cover;
       color: white;
     }
@@ -124,7 +124,7 @@
 
     @media (max-width: 768px) {
       body {
-        background: url('https://example.com/mobile-image.jpg') no-repeat center center fixed;
+        background: url('https://i.postimg.cc/5NpY9JyC/Ba.png') no-repeat center center fixed;
         background-size: cover;
       }
 
