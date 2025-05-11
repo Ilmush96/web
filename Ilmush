@@ -136,7 +136,7 @@
         width: 100%;
         height: auto;
         max-width: 1000px;
-        transform: scale(2);
+        transform: scale(2.2);
       }
     }
   </style>
