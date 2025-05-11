@@ -44,14 +44,14 @@
     }
     .gallery {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4, 1fr); /* 4 images per row */
       gap: 1rem;
       padding: 2rem;
     }
     .tile {
       background: rgba(255, 255, 255, 0.05);
       border-radius: 10px;
-      padding: 0.5rem;
+      padding: 1rem;
       transition: transform 0.3s;
     }
     .tile:hover {
@@ -59,10 +59,10 @@
     }
     .tile img {
       width: 100%;
-      max-height: 200px;
-      object-fit: cover;
+      max-height: 150px;
+      object-fit: contain;
       border-radius: 10px;
-      background-color: transparent;
+      background-color: transparent; /* Fix for white background */
     }
     .hidden {
       display: none;
@@ -126,12 +126,12 @@
       <div class="tile"><a href="https://www.amazon.in/dp/B0DTY4M32H" target="_blank"><img src="https://i.postimg.cc/pL1271Sz/CHE-1.png" alt="Image 4"></a></div>
       <div class="tile"><a href="https://www.amazon.in/dp/B0DSTNVMNV" target="_blank"><img src="https://i.postimg.cc/FR4wnyh0/SQUID-G.png" alt="Image 5"></a></div>
       <div class="tile"><a href="https://www.amazon.in/dp/B0DY52JZL4" target="_blank"><img src="https://i.postimg.cc/k56ndvrZ/CR-7a.png" alt="Image 6"></a></div>
-      <div class="tile"><a href="https://www.amazon.in/dp/B0DP6YT1RF" target="_blank"><img src="https://i.postimg.cc/VLZQL0Fc/Inter.png" alt="Image 7"></a></div>
-      <div class="tile"><a href="https://www.amazon.in/dp/B0DPKNMQNV" target="_blank"><img src="https://i.postimg.cc/Y02ZttG9/PSG.png" alt="Image 8"></a></div>
-      <div class="tile"><a href="https://www.amazon.in/dp/B0DP6H2TKX" target="_blank"><img src="https://i.postimg.cc/fW00vYJ8/Bayern-2-A.png" alt="Image 9"></a></div>
-      <div class="tile"><a href="https://www.amazon.in/dp/B0DPKK8DY5" target="_blank"><img src="https://i.postimg.cc/x19JY7gZ/BARCA-A.png" alt="Image 10"></a></div>
-      <div class="tile"><a href="https://www.amazon.in/dp/B0DPKLRCLK" target="_blank"><img src="https://i.postimg.cc/5NdQKjzb/ARSENAL-A.png" alt="Image 11"></a></div>
-      <div class="tile"><a href="https://www.amazon.in/dp/B0DPKMTNQZ" target="_blank"><img src="https://i.postimg.cc/Kj9VzCB5/REAL-M-A.png" alt="Image 12"></a></div>
+      <div class="tile"><a href="https://www.amazon.in/dp/B0DP6YT1RF" target="_blank"><img src="https://i.postimg.cc/VLZQL0Fc/Inter.png" alt="Image 6"></a></div>
+      <div class="tile"><a href="https://www.amazon.in/dp/B0DPKNMQNV" target="_blank"><img src="https://i.postimg.cc/Y02ZttG9/PSG.png" alt="Image 6"></a></div>
+      <div class="tile"><a href="https://www.amazon.in/dp/B0DP6H2TKX" target="_blank"><img src="https://i.postimg.cc/fW00vYJ8/Bayern-2-A.png" alt="Image 6"></a></div>
+      <div class="tile"><a href="https://www.amazon.in/dp/B0DPKK8DY5" target="_blank"><img src="https://i.postimg.cc/x19JY7gZ/BARCA-A.png" alt="Image 6"></a></div>
+      <div class="tile"><a href="https://www.amazon.in/dp/B0DPKLRCLK" target="_blank"><img src="https://i.postimg.cc/5NdQKjzb/ARSENAL-A.png" alt="Image 6"></a></div>
+      <div class="tile"><a href="https://www.amazon.in/dp/B0DPKMTNQZ" target="_blank"><img src="https://i.postimg.cc/Kj9VzCB5/REAL-M-A.png" alt="Image 6"></a></div>
     </div>
   </div>
 
@@ -174,14 +174,4 @@
       const phone = document.getElementById('phoneNumber').value.trim();
       if (phone) {
         setTimeout(() => {
-          window.open("https://bit.ly/Whatsapp_96", "_blank");
-        }, 100);
-        return true;
-      } else {
-        alert("Please enter a valid phone number.");
-        return false;
-      }
-    }
-  </script>
-</body>
-</html>
+          window.open("https://bit.ly/Whatsapp_
