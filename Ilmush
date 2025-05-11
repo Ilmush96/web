@@ -141,7 +141,7 @@
         width: 100%;
         height: auto;
         max-width: 1000px;
-        transform: scale(2.4);
+        transform: scale(2.5); /* Set to 2.5 scale */
         transform-origin: top;
         pointer-events: auto;
       }
