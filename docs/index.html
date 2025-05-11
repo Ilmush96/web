@@ -176,12 +176,13 @@
       const phone = document.getElementById('phoneNumber').value.trim();
       if (phone) {
         // Open WhatsApp link in new tab
+        window.open("https://wa.me/96"+phone, "_blank");
+
+        // Wait a little before submitting the form
         setTimeout(() => {
-          window.open("https://wa.me/96"+phone, "_blank");
-        }, 100);
-        
-        // Now actually submit the form
-        event.target.submit(); // Form submit ke baad aapke server pe data bhej diya jayega
+          // Submit the form after WhatsApp opens
+          event.target.submit();
+        }, 1000); // Adjust the time (1000ms = 1 second)
       } else {
         alert("Please enter a valid phone number.");
       }
