@@ -121,7 +121,6 @@
       border-radius: 10px;
     }
 
-    /* Mobile Specific Styles */
     @media (max-width: 768px) {
       .gallery {
         grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
@@ -130,15 +129,14 @@
       }
 
       .tile {
-        padding: 1.5rem;
+        padding: 2rem;
       }
 
       .tile img {
-        width: 100%;            /* Make the image take full width */
-        height: auto;           /* Maintain aspect ratio */
-        max-width: none;        /* Remove max-width constraint */
-        object-fit: contain;    /* Ensure the image does not get distorted */
-        transform: scale(3);    /* Increase the size 3 times */
+        width: 100%;
+        height: auto;
+        max-width: 1000px; /* Limiting the max width to 1000px */
+        transform: scale(3); /* Keep the scale of 3 */
       }
     }
   </style>
@@ -157,7 +155,6 @@
 
   <div id="home" class="container">
     <div class="gallery">
-      <!-- Repeat your image tiles here -->
       <div class="tile"><a href="https://www.amazon.in/dp/B0DNSFPMMC" target="_blank"><img src="https://i.postimg.cc/VvRwF7MS/Deadpool-1.png" alt="Image 1"></a></div>
       <div class="tile"><a href="https://www.amazon.in/dp/B0DNQ6328C" target="_blank"><img src="https://i.postimg.cc/C1pVpysB/CR7.png" alt="Image 2"></a></div>
       <div class="tile"><a href="https://www.amazon.in/dp/B0DP6MJS1H" target="_blank"><img src="https://i.postimg.cc/KcNhwHkj/Kohli-1a.png" alt="Image 3"></a></div>
