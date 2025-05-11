@@ -123,7 +123,7 @@
 
     @media (max-width: 768px) {
       .gallery {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+        grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
         padding: 1rem;
       }
@@ -135,8 +135,8 @@
       .tile img {
         width: 100%;
         height: auto;
-        max-width: 900px; /* Limiting the max width to 900px */
-        transform: scale(3); /* Keep the scale of 3 */
+        max-width: 800px;
+        transform: scale(3);
       }
     }
   </style>
