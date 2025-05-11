@@ -129,13 +129,13 @@
       }
 
       .tile {
-        padding: 2rem;
+        padding: 1.5rem;
       }
 
       .tile img {
         width: 100%;
         height: auto;
-        max-width: 1200px; /* Increased image size to 3x */
+        max-width: 2000px; /* Increased image size to 3x on mobile */
       }
     }
   </style>
