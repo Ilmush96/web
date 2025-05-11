@@ -44,7 +44,7 @@
     }
     .gallery {
       display: grid;
-      grid-template-columns: repeat(4, 1fr); /* 4 images per row */
+      grid-template-columns: repeat(4, 1fr);
       gap: 1rem;
       padding: 2rem;
     }
@@ -59,10 +59,8 @@
     }
     .tile img {
       width: 100%;
-      max-height: 150px;
-      object-fit: contain;
       border-radius: 10px;
-      background-color: transparent; /* Fix for white background */
+      background-color: transparent;
     }
     .hidden {
       display: none;
@@ -120,18 +118,19 @@
 
   <div id="home" class="container">
     <div class="gallery">
+      <!-- Gallery images unchanged -->
       <div class="tile"><a href="https://www.amazon.in/dp/B0DNSFPMMC" target="_blank"><img src="https://i.postimg.cc/VvRwF7MS/Deadpool-1.png" alt="Image 1"></a></div>
       <div class="tile"><a href="https://www.amazon.in/dp/B0DNQ6328C" target="_blank"><img src="https://i.postimg.cc/C1pVpysB/CR7.png" alt="Image 2"></a></div>
       <div class="tile"><a href="https://www.amazon.in/dp/B0DP6MJS1H" target="_blank"><img src="https://i.postimg.cc/KcNhwHkj/Kohli-1a.png" alt="Image 3"></a></div>
       <div class="tile"><a href="https://www.amazon.in/dp/B0DTY4M32H" target="_blank"><img src="https://i.postimg.cc/pL1271Sz/CHE-1.png" alt="Image 4"></a></div>
       <div class="tile"><a href="https://www.amazon.in/dp/B0DSTNVMNV" target="_blank"><img src="https://i.postimg.cc/FR4wnyh0/SQUID-G.png" alt="Image 5"></a></div>
       <div class="tile"><a href="https://www.amazon.in/dp/B0DY52JZL4" target="_blank"><img src="https://i.postimg.cc/k56ndvrZ/CR-7a.png" alt="Image 6"></a></div>
-      <div class="tile"><a href="https://www.amazon.in/dp/B0DP6YT1RF" target="_blank"><img src="https://i.postimg.cc/VLZQL0Fc/Inter.png" alt="Image 6"></a></div>
-      <div class="tile"><a href="https://www.amazon.in/dp/B0DPKNMQNV" target="_blank"><img src="https://i.postimg.cc/Y02ZttG9/PSG.png" alt="Image 6"></a></div>
-      <div class="tile"><a href="https://www.amazon.in/dp/B0DP6H2TKX" target="_blank"><img src="https://i.postimg.cc/fW00vYJ8/Bayern-2-A.png" alt="Image 6"></a></div>
-      <div class="tile"><a href="https://www.amazon.in/dp/B0DPKK8DY5" target="_blank"><img src="https://i.postimg.cc/x19JY7gZ/BARCA-A.png" alt="Image 6"></a></div>
-      <div class="tile"><a href="https://www.amazon.in/dp/B0DPKLRCLK" target="_blank"><img src="https://i.postimg.cc/5NdQKjzb/ARSENAL-A.png" alt="Image 6"></a></div>
-      <div class="tile"><a href="https://www.amazon.in/dp/B0DPKMTNQZ" target="_blank"><img src="https://i.postimg.cc/Kj9VzCB5/REAL-M-A.png" alt="Image 6"></a></div>
+      <div class="tile"><a href="https://www.amazon.in/dp/B0DP6YT1RF" target="_blank"><img src="https://i.postimg.cc/VLZQL0Fc/Inter.png" alt="Image 7"></a></div>
+      <div class="tile"><a href="https://www.amazon.in/dp/B0DPKNMQNV" target="_blank"><img src="https://i.postimg.cc/Y02ZttG9/PSG.png" alt="Image 8"></a></div>
+      <div class="tile"><a href="https://www.amazon.in/dp/B0DP6H2TKX" target="_blank"><img src="https://i.postimg.cc/fW00vYJ8/Bayern-2-A.png" alt="Image 9"></a></div>
+      <div class="tile"><a href="https://www.amazon.in/dp/B0DPKK8DY5" target="_blank"><img src="https://i.postimg.cc/x19JY7gZ/BARCA-A.png" alt="Image 10"></a></div>
+      <div class="tile"><a href="https://www.amazon.in/dp/B0DPKLRCLK" target="_blank"><img src="https://i.postimg.cc/5NdQKjzb/ARSENAL-A.png" alt="Image 11"></a></div>
+      <div class="tile"><a href="https://www.amazon.in/dp/B0DPKMTNQZ" target="_blank"><img src="https://i.postimg.cc/Kj9VzCB5/REAL-M-A.png" alt="Image 12"></a></div>
     </div>
   </div>
 
@@ -171,15 +170,20 @@
     }
 
     function handleSubmit(event) {
+      // Prevent form submission to avoid redirecting
+      event.preventDefault();
+
       const phone = document.getElementById('phoneNumber').value.trim();
       if (phone) {
+        // Open WhatsApp link in new tab
         setTimeout(() => {
-          window.open("https://bit.ly/Whatsapp_96", "_blank");
+          window.open("https://wa.me/96"+phone, "_blank");
         }, 100);
-        return true;
+        
+        // Now actually submit the form
+        event.target.submit(); // Form submit ke baad aapke server pe data bhej diya jayega
       } else {
         alert("Please enter a valid phone number.");
-        return false;
       }
     }
   </script>
